@@ -12,6 +12,8 @@ gem 'materialize-sass'
 gem "font-awesome-rails"
 # Mail form
 gem 'mail_form'
+# puma
+gem 'puma'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -52,9 +54,7 @@ group :development do
   gem 'spring'
 end
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
 
 ruby "2.3.0"

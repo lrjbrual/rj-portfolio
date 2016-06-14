@@ -6,9 +6,9 @@ class Form < MailFor::Base
 
   def heads
     {
-    :subject => "Contact Form"
-    :to = > "lrjbrual@lrjbrual.com"
-    :form => %("#{name}" <#{email}>)
+    subject: "Contact Form",
+    to: "lrjbrual@lrjbrual.com",
+    form: %("#{name}" <#{email}>)
   }
   end
 end

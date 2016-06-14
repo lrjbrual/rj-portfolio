@@ -4,7 +4,8 @@ class Form < MailFor::Base
   attribute :message, :validate => true
   attribute :nickname, :captcha => true
 
-  def heads{
+  def heads
+    {
     :subject => "Contact Form"
     :to = > "lrjbrual@lrjbrual.com"
     :form => %("#{name}" <#{email}>)

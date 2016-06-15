@@ -1,4 +1,4 @@
-class Form < ApplicationMailer::Base
+class Form < ActionMailer::Base
   attribute :name, :validate => true
   attribute :email, :validate => /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
   attribute :message, :validate => true

@@ -8,19 +8,22 @@
           <div class="input-field offset-s2 col s8">
             <i class="material-icons prefix">account_circle</i>
             <%= f.text_field :name, required:true, id: "FullName", class:"materialize-textarea validate" %>
-            <label for="FullName">Full Name</label>
+            <%= f.label :Full_Name, for: "FullName" %>
+            <!-- <label for="FullName">Full Name</label> -->
           </div>
         </div>
         <div class="row">
         <div class="input-field offset-s2 col s8">
            <i class="material-icons prefix">email</i>
-           <%= f.text_field :email, required:true, id: "email", type: "email", class:"materialize-textarea validate" %>
-           <label for="email">Email Address</label>
+           <%= f.email_field :email, required:true, id: "email", type: "email", class:"materialize-textarea validate" %>
+           <%= f.label :email, for: "Email" %>
+           <!-- <label for="email">Email Address</label> -->
          </div>
        </div>
        <div class="input-field offset-s2 col s8 center">
          <%= f.text_field :message, required:true, id: "message", class:"materialize-textarea validate" %>
-         <label for="message">Your Message</label>
+         <%= f.label :message, for: "message" %>
+         <!-- <label for="message">Your Message</label> -->
        </div>
        <div class="hidden">
          <%= f.label :nickname %>

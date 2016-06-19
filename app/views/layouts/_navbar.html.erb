@@ -7,9 +7,14 @@
   <!-- Right Navigation <--></-->
   <div class="navbar-wagon-right col s12 m4 l8">
     <!-- Projects -->
-    <%= link_to "Projects", "project.html", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Contact", "#modal1", class: "waves-effect waves-light btn modal-trigger" %>
+    <%= link_to "Articles", "project.html", class: "waves-effect waves-teal btn-flat" %> |
+    <%= link_to "Projects", "project.html", class: "waves-effect waves-teal btn-flat" %>
+    <%= link_to "#modal1", class: "waves-effect waves-light btn modal-trigger" do %>
+        <i class="fa fa-paper-plane" aria-hidden="true"></i> Contact
+    <% end %>
+    <!-- <%= link_to "Contact", "#modal1", class: "waves-effect waves-light btn modal-trigger" %>
     <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
 
     <!-- Button (call-to-action) -->
     <%= link_to "resume.html", class: "waves-effect waves-purple btn orange darken-4" do %>

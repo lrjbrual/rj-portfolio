@@ -8,9 +8,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="col s12 m6 l8">
-<%= render 'forms/form' %>
-<%= render 'layouts/navbar' %>
-<%= yield %>
-<%= render 'layouts/footer' %>
+  <%= render 'forms/form' %>
+  <%= render 'layouts/navbar' %>
+  <%= yield %>
 </body>
+<footer class="page-footer teal accent-4">
+  <%= render 'layouts/footer' %>
+</footer>
 </html>

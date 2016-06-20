@@ -9,6 +9,7 @@
 @import "bootstrap_variables";
 @import "layout/utilities";
 @import "vendor/animation_cheat_sheet";
+@import "layout/footer";
 @import "about";
 @import "avatar";
 @import "badge";
@@ -17,4 +18,5 @@
 @import "font-awesome";
 
 //font google
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Lobster); //for Discover my world
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script); //for title name

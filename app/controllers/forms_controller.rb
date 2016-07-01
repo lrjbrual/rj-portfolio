@@ -8,10 +8,13 @@
      @form = Form.new(params[:form])
      @form.request = request
      if @form.deliver
-       flash.now[:error] = nil
+       flash[:notice] = " test"
+       #flash.now[:error] = nil
+       redirect_to root_path
      else
-       flash.now[:error] = 'Contact send message'
+       #flash.now[:error] = 'Contact send message'
        render :new
+       redirect_to root_path
      end
    end
 

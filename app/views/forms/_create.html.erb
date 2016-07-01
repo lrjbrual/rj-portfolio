@@ -1,0 +1,20 @@
+<!-- <div class="notification">
+  <% if notice %>
+    <div class="alert alert-info alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <%= notice %>
+    </div>
+  <% end %>
+  <% if flash %>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <%= flash %>
+    </div>
+  <% end %>
+</div> -->
+<% flash.each do |key, value| %>
+  <scrip> Materialize.toast('I am a toast!', 4000)</scrip>
+  <a class="btn" onclick="Materialize.toast('I am a toast', 4000,'',function(){alert('Your toast was dismissed')})">Your message sent!</a>
+
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
